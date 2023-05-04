@@ -64,6 +64,11 @@
     color: #007bff;
   }
   
+  /* main 스타일 */
+  main {
+    padding-top: 80px; /* header height 값과 동일하게 조정 */
+  }
+
   /* 섹션 스타일 */
   section {
     padding: 80px 0;
