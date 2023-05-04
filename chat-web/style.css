@@ -18,10 +18,99 @@
   
   .container {
     max-width: 960px;
+    margin-top: 0;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 5px 20px;
+    padding-bottom: 40px;
+  }
+
+  .con_box {
+    background-color: #C3E6CB;
+    border-radius: 10px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    height: 50px;
+  }
+
+  .con_box p {
+    flex: 1;
+    margin: 0;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .con_box input[type="text"] {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    background-color: transparent;
   }
   
+  .green-bg {
+    background-color: #d7fadf;
+  }
+
+  .main_ti {
+    color: green; 
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+
+  .sub_ti {
+    color: green; 
+    font-size: 19px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .sub_tx {
+    color: rgb(131, 236, 131); 
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .banner_pic {
+    max-height: 180px;
+    width: auto;
+    display: block;
+    margin: 5px auto 10px; /* 수정 */
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .banner_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: black;
+    z-index: 1;
+}
+
+  .banner_pic img {
+    height: auto;
+    max-height: 60%;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    transform: translateY(-45%);
+    z-index: 0;
+  }
+
+  .hero {
+    padding-top: 0px;
+  }
+
   /* 헤더 스타일 */
   header {
     display: flex;
@@ -71,18 +160,18 @@
 
   /* 섹션 스타일 */
   section {
-    padding: 80px 0;
+    margin-top: 10px;
   }
   
   .section-title {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
   }
   
   .section-title h2 {
     font-size: 36px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   .section-title p {
@@ -90,7 +179,7 @@
   }
   
   .cta {
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center;
   }
   
