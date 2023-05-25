@@ -672,8 +672,6 @@ body {
   width: 330px;
   height: 56px;
   background: rgba(0, 87, 114, 1);
-  opacity: 1;
-  position: absolute;
   top: 335px;
   left: 555px;
   border-top-left-radius: 4px;
@@ -683,11 +681,8 @@ body {
   overflow: hidden;
 }
 .v32_1325 {
-  width: 205px;
   color: rgba(255, 255, 255, 1);
   position: absolute;
-  top: 18px;
-  left: 56px;
   font-family: Noto Sans KR;
   font-weight: Medium;
   font-size: 17px;
@@ -710,19 +705,19 @@ body {
 }
 .v32_1319 {
   width: 298px;
-  height: 25px;
+  height: 40px;
   background: url("../images/v32_1319.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 12px;
+  top: 8px;
   left: 16px;
   overflow: hidden;
 }
 .v32_1320 {
-  width: 193px;
+  width: 295px;
   color: rgba(170, 170, 170, 1);
   position: absolute;
   top: 4px;
@@ -732,6 +727,8 @@ body {
   font-size: 17px;
   opacity: 1;
   text-align: left;
+  border: none;
+  outline: none;
 }
 .v32_1321 {
   width: 291px;
