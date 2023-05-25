@@ -3,6 +3,7 @@
 }
 body {
   font-size: 14px;
+  margin: 0px;
 }
 .v31_626 {
   width: 100%;
@@ -23,7 +24,7 @@ body {
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 1304px;
+  top: 1500px;
   left: 0px;
   overflow: hidden;
 }
@@ -651,7 +652,7 @@ body {
   background-size: cover;
   opacity: 1;
   position: absolute;
-  top: 170px;
+  top: 10px;
   left: 0px;
   overflow: hidden;
 }
@@ -1122,7 +1123,7 @@ body {
   opacity: 1;
   position: absolute;
   top: 48px;
-  left: 813px;
+  right: 300px;
   overflow: hidden;
 }
 .v32_1337 {
