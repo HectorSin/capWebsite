@@ -7,7 +7,7 @@ def page1():
     return render_template('index.html')
 
 @app.route('/index.html')
-def page1():
+def page10():
     return render_template('index.html')
 
 @app.route('/air.html')
