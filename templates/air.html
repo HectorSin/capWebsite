@@ -6,10 +6,15 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Inter&display=swap"
       rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/air.css') }}"
     />
     <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/air.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
@@ -111,80 +116,61 @@
       </div>
     </div>
     <!--탑배너-->
-
-    <div class="v31_626">
-      <div class="v178_463">
-        <div class="v178_465">
-          <div class="v178_469">
-            <div class="v34_77"><span class="v34_78">다낭의 바다</span></div>
-            <div
-              onclick="javascriot:location.href='https://m.blog.naver.com/mnoeuvring30177/223092235409'"
-              style="cursor: hand"
-              onfocus="blur();"
-              class="v34_69"
-            ></div>
-          </div>
-          <div class="v178_468">
-            <span class="v34_76">에펠탑에서의 독서 </span>
-            <div
-              onclick="javascriot:location.href='https://m.blog.naver.com/kkongi3028/222972420726'"
-              style="cursor: hand"
-              onfocus="blur();"
-              class="v34_68"
-            ></div>
-          </div>
-          <div class="v178_467">
-            <div class="v34_73"><span class="v34_74">도쿄타워워</span></div>
-            <div
-              onclick="javascriot:location.href='https://m.blog.naver.com/zaerac/223105271984'"
-              style="cursor: hand"
-              onfocus="blur();"
-              class="v34_67"
-            ></div>
-          </div>
-          <div
-            onclick="javascriot:location.href='https://m.blog.naver.com/ejejucom/223031826345'"
-            style="cursor: hand"
-            onfocus="blur();"
-            class="v178_466"
-          >
-            <div class="v34_8"><span class="v34_9">제주에서</span></div>
-            <div class="v34_63"></div>
-          </div>
-        </div>
-        <span class="v34_3">여행지 매거진</span>
+    <div class="v46_725">
+      <div class="v180_213">
+        <div class="v55_1047"></div>
+        <span class="v55_1048">특가 항공권 보러가기</span>
+        <div class="v55_1051"><div class="v55_1052"></div></div>
       </div>
-      <form action="ways.html" method="POST">
-        <div class="v178_460">
-          <div class="v32_1317"></div>
-
-          <div class="v32_1321">
-            <span class="v32_1322"
-              >당신에게 딱맞는 여행 경로를 추천해드려요!</span
-            >
-          </div>
-          <div class="v32_1318">
-            <div class="v32_1319">
-              <input
-                type="text"
-                id="userInput"
-                name="userInput"
-                class="v32_1320"
-                placeholder="여행지를 입력하세요."
-                required
-              />
+      <div class="v180_212">
+        <div class="v48_884"></div>
+        <div class="v48_779">
+          <div class="v48_874"></div>
+          <div class="v48_780">
+            <div class="v48_781">
+              <div class="v48_782"><span class="v48_783">왕복</span></div>
+              <span class="v48_785">다구간</span
+              ><span class="v48_784">편도</span>
             </div>
           </div>
-          <input
-            type="submit"
-            value="여행 경로 추천 받기"
-            class="v32_1324 v32_1325"
-          />
-
-          <div class="v34_334"></div>
-          <div class="v34_335"></div>
+          <div class="v48_796">
+            <div class="v48_797">
+              <div class="v48_798">
+                <div class="v48_799"><span class="v48_800">서울 SEL</span></div>
+              </div>
+              <div class="v48_801">
+                <div class="v48_802">
+                  <div class="v48_803">
+                    <div class="v48_804"><div class="v48_805"></div></div>
+                    <div class="v48_806">
+                      <div class="v48_807"></div>
+                      <div class="v48_808"></div>
+                      <div class="v48_809"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="v48_810">
+                <div class="v48_811">
+                  <span class="v48_812">도착지를 입력하세요.</span>
+                </div>
+              </div>
+            </div>
+            <div class="name"></div>
+            <div class="v48_823">
+              <div class="v48_824">
+                <div class="v48_825">
+                  <span class="v48_828">승객 1명, 일반석</span>
+                </div>
+                <div class="v48_876"><div class="v48_877"></div></div>
+              </div>
+            </div>
+            <!--<span class="v48_858">가는 날</span>-->
+            <div class="name"></div>
+          </div>
+          <div class="name"></div>
         </div>
-      </form>
+      </div>
     </div>
     <!--하위배너-->
     <div class="v178_470">

@@ -9,8 +9,16 @@
       href="https://fonts.googleapis.com/css?family=Inter&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/rent.css') }}"
+    />
     <link href="./css/main.css" rel="stylesheet" />
-    <link href="./css/sukso.css" rel="stylesheet" />
+    <link href="./css/rent.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
@@ -112,93 +120,84 @@
       </div>
     </div>
     <!--탑배너-->
-    <div class="v210_212">
-      <div class="v211_286">
-        <div class="v211_287">
-          <div class="v211_288"></div>
-          <div class="v211_289"><span class="v211_290">TOP1 🥇</span></div>
-          <div class="v211_291">
-            <span class="v211_292">[4성★호놀룰루] 하얏트 리젠시 와이키키</span>
-          </div>
-          <span class="v211_293">와이키키 중심 하와이 베스트셀러</span>
-          <div class="v211_294">
-            <span class="v211_295">468,000</span
-            ><span class="v211_296">원~</span>
-          </div>
-        </div>
-        <div class="v211_297">
-          <div class="v211_298"></div>
-          <div class="v211_299"><span class="v211_300">TOP.2 🥈</span></div>
-          <div class="v211_301">
-            <span class="v211_302">[5성★세부] 제이파크 아일랜드 리조트</span>
-          </div>
-          <span class="v211_303">워터파크 맛집 인기 리조트</span>
-          <div class="v211_304">
-            <span class="v211_305">237,000</span
-            ><span class="v211_306">원~</span>
-          </div>
-        </div>
-        <div class="v211_307">
-          <div class="v211_308"></div>
-          <div class="v211_309"><span class="v211_310">TOP.3 🥉</span></div>
-          <div class="v211_311">
-            <span class="v211_312">[4성★괌] 두짓 비치 괌</span>
-          </div>
-          <span class="v211_313">시내 중심 인기 호텔!</span>
-          <div class="v211_314">
-            <span class="v211_315">290,000</span
-            ><span class="v211_316">원~</span>
-          </div>
-        </div>
-        <div class="v211_317">
-          <div class="v211_318"></div>
-          <div class="v211_319"><span class="v211_320">TOP.4 🏅</span></div>
-          <div class="v211_321">
-            <span class="v211_322">[3.5성★방콕] 이비스 스타일스 실롬</span>
-          </div>
-          <span class="v211_323">방콕 가성비 인기 호텔</span>
-          <div class="v211_324">
-            <span class="v211_325">74,000</span
-            ><span class="v211_326">원~</span>
-          </div>
-        </div>
-      </div>
-      <span class="v211_285">인기 TOP 호텔</span>
-      <div class="v210_214"></div>
-      <div class="v210_284">
-        <div class="v210_215"></div>
-        <div class="v210_216">
-          <div class="v210_217">
-            <div class="v210_218"><span class="v210_219">해외</span></div>
-            <span class="v210_220">국내</span>
-          </div>
-        </div>
-        <div class="v210_221">
-          <div class="v210_233">
-            <div class="v210_234">
-              <div class="v210_235"><span class="v210_236">숙박인원</span></div>
-              <div class="v210_237"></div>
-            </div>
-          </div>
-          <div class="v210_226">
-            <div class="v210_227">
-              <div class="v210_228">
-                <span class="v210_229">여행일정을 입력하세요.</span>
+    <div class="v103_562">
+      <div class="v103_410"><div class="v103_411"></div></div>
+      <div class="v103_412">
+        <span class="v103_413">어떤 렌터카 찾으세요?</span>
+        <div class="v103_414">
+          <div class="v103_415">
+            <div class="v103_455"><span class="v103_456">검색</span></div>
+            <div class="v109_413">
+              <div class="v109_414">
+                <div class="v109_415">
+                  <span class="v109_416">여행지를 입력하세요.</span>
+                </div>
               </div>
-              <div class="v210_230">
-                <div class="v210_231"><div class="v210_232"></div></div>
+            </div>
+            <div class="v109_431">
+              <div class="v109_432">
+                <div class="v109_433">
+                  <span class="v109_434">여행일정을 입력하세요.</span>
+                </div>
+                <div class="v109_435">
+                  <div class="v109_436"><div class="v109_437"></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="v109_438">
+              <div class="v109_439">
+                <div class="v109_440">
+                  <span class="v109_441">운전자 생년원일</span>
+                </div>
+                <div class="v109_444">
+                  <div class="v109_445">
+                    <div class="v109_446">
+                      <div class="v109_447">
+                        <div class="v109_448"></div>
+                        <div class="v109_449"><div class="v109_450"></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="v210_222">
-            <div class="v210_223">
-              <div class="v210_224">
-                <span class="v210_225">여행지를 입력하세요.</span>
+          <div class="v103_457">
+            <div class="v103_459">
+              <div class="v103_460">
+                <div class="v103_461">
+                  <div class="v103_462">
+                    <div class="v103_464">
+                      <div class="v103_465"></div>
+                      <div class="v103_466"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+            <span class="v103_458">운전 경력 1년 이상</span>
           </div>
         </div>
-        <div class="name"></div>
+        <div class="v103_467">
+          <div class="v103_468"><div class="v103_469"></div></div>
+          <div class="v103_474">
+            <div class="v109_399"></div>
+            <span class="v109_402">자주 묻는 질문 10가지</span>
+            <div class="v109_398"></div>
+          </div>
+          <div class="v103_476"><div class="v103_477"></div></div>
+          <div class="v103_478"><div class="v103_479"></div></div>
+          <div class="v112_398">
+            <div class="v112_399"></div>
+            <span class="v112_400">5분만에 이해하는 자동차 보험</span>
+            <div class="v112_404"></div>
+          </div>
+          <div class="v112_405">
+            <div class="v112_406"></div>
+            <span class="v112_407">오픈 기념 7만원 할인 쿠폰 </span>
+            <div class="v112_411"></div>
+          </div>
+        </div>
       </div>
     </div>
     <!--하위배너-->

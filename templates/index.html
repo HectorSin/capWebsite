@@ -9,8 +9,11 @@
       href="https://fonts.googleapis.com/css?family=Inter&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
     <link href="./css/main.css" rel="stylesheet" />
-    <link href="./css/rent.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
@@ -112,85 +115,80 @@
       </div>
     </div>
     <!--탑배너-->
-    <div class="v103_562">
-      <div class="v103_410"><div class="v103_411"></div></div>
-      <div class="v103_412">
-        <span class="v103_413">어떤 렌터카 찾으세요?</span>
-        <div class="v103_414">
-          <div class="v103_415">
-            <div class="v103_455"><span class="v103_456">검색</span></div>
-            <div class="v109_413">
-              <div class="v109_414">
-                <div class="v109_415">
-                  <span class="v109_416">여행지를 입력하세요.</span>
-                </div>
-              </div>
-            </div>
-            <div class="v109_431">
-              <div class="v109_432">
-                <div class="v109_433">
-                  <span class="v109_434">여행일정을 입력하세요.</span>
-                </div>
-                <div class="v109_435">
-                  <div class="v109_436"><div class="v109_437"></div></div>
-                </div>
-              </div>
-            </div>
-            <div class="v109_438">
-              <div class="v109_439">
-                <div class="v109_440">
-                  <span class="v109_441">운전자 생년원일</span>
-                </div>
-                <div class="v109_444">
-                  <div class="v109_445">
-                    <div class="v109_446">
-                      <div class="v109_447">
-                        <div class="v109_448"></div>
-                        <div class="v109_449"><div class="v109_450"></div></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+    <div class="v31_626">
+      <div class="v178_463">
+        <div class="v178_465">
+          <div class="v178_469">
+            <div class="v34_77"><span class="v34_78">다낭의 바다</span></div>
+            <div
+              onclick="javascriot:location.href='https://m.blog.naver.com/mnoeuvring30177/223092235409'"
+              style="cursor: hand"
+              onfocus="blur();"
+              class="v34_69"
+            ></div>
           </div>
-          <div class="v103_457">
-            <div class="v103_459">
-              <div class="v103_460">
-                <div class="v103_461">
-                  <div class="v103_462">
-                    <div class="v103_464">
-                      <div class="v103_465"></div>
-                      <div class="v103_466"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <span class="v103_458">운전 경력 1년 이상</span>
+          <div class="v178_468">
+            <span class="v34_76">에펠탑에서의 독서 </span>
+            <div
+              onclick="javascriot:location.href='https://m.blog.naver.com/kkongi3028/222972420726'"
+              style="cursor: hand"
+              onfocus="blur();"
+              class="v34_68"
+            ></div>
+          </div>
+          <div class="v178_467">
+            <div class="v34_73"><span class="v34_74">도쿄타워워</span></div>
+            <div
+              onclick="javascriot:location.href='https://m.blog.naver.com/zaerac/223105271984'"
+              style="cursor: hand"
+              onfocus="blur();"
+              class="v34_67"
+            ></div>
+          </div>
+          <div
+            onclick="javascriot:location.href='https://m.blog.naver.com/ejejucom/223031826345'"
+            style="cursor: hand"
+            onfocus="blur();"
+            class="v178_466"
+          >
+            <div class="v34_8"><span class="v34_9">제주에서</span></div>
+            <div class="v34_63"></div>
           </div>
         </div>
-        <div class="v103_467">
-          <div class="v103_468"><div class="v103_469"></div></div>
-          <div class="v103_474">
-            <div class="v109_399"></div>
-            <span class="v109_402">자주 묻는 질문 10가지</span>
-            <div class="v109_398"></div>
-          </div>
-          <div class="v103_476"><div class="v103_477"></div></div>
-          <div class="v103_478"><div class="v103_479"></div></div>
-          <div class="v112_398">
-            <div class="v112_399"></div>
-            <span class="v112_400">5분만에 이해하는 자동차 보험</span>
-            <div class="v112_404"></div>
-          </div>
-          <div class="v112_405">
-            <div class="v112_406"></div>
-            <span class="v112_407">오픈 기념 7만원 할인 쿠폰 </span>
-            <div class="v112_411"></div>
-          </div>
-        </div>
+        <span class="v34_3">여행지 매거진</span>
       </div>
+      <form action="ways.html" method="POST">
+        <div class="v178_460">
+          <div class="v32_1317"></div>
+
+          <div class="v32_1321">
+            <span class="v32_1322"
+              >당신에게 딱맞는 여행 경로를 추천해드려요!</span
+            >
+          </div>
+          <div class="v32_1318">
+            <div class="v32_1319">
+              <input
+                type="text"
+                id="userInput"
+                name="userInput"
+                class="v32_1320"
+                placeholder="여행지를 입력하세요."
+                required
+              />
+            </div>
+          </div>
+          <input
+            type="submit"
+            value="여행 경로 추천 받기"
+            class="v32_1324 v32_1325"
+          />
+
+          <div class="v34_334"></div>
+          <div class="v34_335"></div>
+        </div>
+      </form>
     </div>
     <!--하위배너-->
     <div class="v178_470">
