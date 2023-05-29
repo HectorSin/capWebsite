@@ -6,6 +6,10 @@ app = Flask(__name__)
 def page1():
     return render_template('index.html')
 
+@app.route('/index.html')
+def page1():
+    return render_template('index.html')
+
 @app.route('/air.html')
 def page2():
     return render_template('air.html')
