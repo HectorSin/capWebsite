@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+from chat_api import chat
 
 app = Flask(__name__)
 
@@ -38,9 +39,15 @@ def page7():
 def page8():
     return render_template('tour.html')
 
-@app.route('/ways.html')
-def page9():
-    return render_template('ways.html')
+# 폼 데이터 처리
+@app.route('/ways.html', methods=['POST'])
+def handle_form():
+    user_input = request.form.get('userInput')
+    c_result = chat(user_input)
+    # 폼 데이터를 처리하는 로직을 작성합니다.
+
+    # 결과를 ways.html에 전달하여 렌더링합니다.
+    return render_template('ways.html', result=c_result)
 
 # 나머지 HTML 파일에 대해서도 동일한 방식으로 라우트를 추가합니다.
 
