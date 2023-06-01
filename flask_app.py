@@ -47,6 +47,7 @@ def handle_form():
     # 폼 데이터를 처리하는 로직을 작성합니다.
 
     # 결과를 ways.html에 전달하여 렌더링합니다.
+    #c_result = user_input
     return render_template('ways.html', result=c_result)
 
 # 나머지 HTML 파일에 대해서도 동일한 방식으로 라우트를 추가합니다.
