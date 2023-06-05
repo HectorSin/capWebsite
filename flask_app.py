@@ -16,8 +16,16 @@ def page2():
     return render_template('air.html')
 
 @app.route('/form1.html')
-def page3():
+def form1():
     return render_template('form1.html')
+
+@app.route('/form21.html')
+def form21():
+    return render_template('form21.html')
+
+@app.route('/form22.html')
+def form22():
+    return render_template('form22.html')
 
 @app.route('/form2.html')
 def page4():
