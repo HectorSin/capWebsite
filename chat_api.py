@@ -16,4 +16,7 @@ def chat(user):
     assistant_content = completion.choices[0].message["content"].strip()
     messages.append({"role": "assistant", "content": f"{assistant_content}"})
 
+    with open('sp500.txt', 'a') as file:
+        file.write("* " + assistant_content + '\n')
+
     return assistant_content

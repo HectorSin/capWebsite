@@ -131,8 +131,8 @@ def page233():
 @app.route('/ways111.html', methods=['POST'])
 def handle_form111():
     user_input = request.form.get('userInput')
-    #c_result = chat(q1[0] + q2[0] + q3[0] + user_input)
-    c_result = q1[0] + q2[0] + q3[0] + user_input
+    c_result = chat(q1[0] + q2[0] + q3[0] + user_input)
+    # c_result = q1[0] + q2[0] + q3[0] + user_input
     # 결과를 ways.html에 전달하여 렌더링합니다.
     return render_template('ways.html', result=c_result)
 
