@@ -35,16 +35,15 @@ body {
   background: rgba(217, 217, 217, 1);
   opacity: 1;
   position: absolute;
-  top: 266px;
+  top: 300px;
   left: 305px;
   overflow: hidden;
 }
 .v200_546 {
-  width: 594px;
+  width: 934px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 436px;
-  left: 485px;
+  top: 10px;
   font-family: Noto Sans KR;
   font-weight: Regular;
   font-size: 40px;
