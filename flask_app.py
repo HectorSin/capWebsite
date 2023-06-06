@@ -127,6 +127,10 @@ def page232():
 def page233():
     return render_template('index233.html')
 
+@app.route('/mypage.html')
+def page233():
+    return render_template('mypage.html', result = "hi")
+
 # 폼 데이터 처리
 @app.route('/ways111.html', methods=['POST'])
 def handle_form111():
