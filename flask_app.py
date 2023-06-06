@@ -105,27 +105,27 @@ def page213():
 
 @app.route('/index221.html')
 def page221():
-    return render_template('index111.html')@app.route('/index221.html')
+    return render_template('index221.html')
 
 @app.route('/index222.html')
 def page222():
-    return render_template('index111.html')@app.route('/index222.html')
+    return render_template('index222.html')
 
 @app.route('/index223.html')
 def page223():
-    return render_template('index111.html')@app.route('/index223.html')
+    return render_template('index223.html')
 
 @app.route('/index231.html')
 def page231():
-    return render_template('index111.html')@app.route('/index231.html')
+    return render_template('index231.html')
 
 @app.route('/index232.html')
 def page232():
-    return render_template('index111.html')@app.route('/index232.html')
+    return render_template('index232.html')
 
 @app.route('/index233.html')
 def page233():
-    return render_template('index111.html')@app.route('/index233.html')
+    return render_template('index233.html')
 
 # 폼 데이터 처리
 @app.route('/ways111.html', methods=['POST'])
