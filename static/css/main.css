@@ -1,6 +1,14 @@
 * {
   box-sizing: border-box;
 }
+
+#map {
+  width: 500px;
+  height: 400px;
+  top: 150px;
+  left: 500px;
+}
+
 body {
   font-size: 14px;
   margin: 0px;
