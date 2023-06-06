@@ -19,6 +19,6 @@ def chat(user):
     assistant_content_t = assistant_content.replace('.', '.\n')
 
     with open('sp500.txt', 'a') as file:
-        file.write("* " + assistant_content_t + '\n\n' + "**************************" + '\n')
+        file.write("* " + assistant_content_t + '\n\n' + "**************************************************" + '\n\n')
 
     return assistant_content

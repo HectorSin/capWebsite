@@ -7,6 +7,11 @@ q1 = ["나는 혼자 여행을 즐기는 편이야 ", "나는 가족,친구,연�
 q2 = ["호캉스같은 여행을 좋아해 ", "문화체험을 즐기는 편이야 ", "호캉스, 문화체험 말고 다른 종류의 활동을 좋아해 "]
 q3 = ["돈 많이 써도 괜찮아, ", "돈은 적당히 쓰고 싶어, ", "돈은 많이 안쓰고 싶어, "]
 
+def read_txt():
+    with open('sp500.txt', 'r', encoding='utf-8') as file:
+        txt_b = file.read()
+        return txt_b
+
 @app.route('/')
 def page1():
     return render_template('index.html')
@@ -128,8 +133,8 @@ def page233():
     return render_template('index233.html')
 
 @app.route('/mypage.html')
-def page233():
-    return render_template('mypage.html', result = "hi")
+def mypage():
+    return render_template('mypage.html', result = read_txt())
 
 # 폼 데이터 처리
 @app.route('/ways111.html', methods=['POST'])
