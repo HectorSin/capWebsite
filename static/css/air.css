@@ -76,7 +76,8 @@
 .v180_212 {
   width: 100%;
   height: 406px;
-  background: url("../images/v180_212.png");
+  /*background: url("../images/v180_212.png");*/
+  background: url("../images/suko_ba.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

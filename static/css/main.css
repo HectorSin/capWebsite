@@ -54,7 +54,8 @@ body {
 .v178_470 {
   width: 100%;
   height: 108px;
-  background: url("../images/v178_470.png");
+  /*background: url("../images/v178_470.png");*/
+  background: url("../images/Component1.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -885,6 +886,10 @@ body {
   opacity: 1;
   text-align: left;
 }
+.v34_234:hover {
+  color: rgb(20, 14, 203);
+  font-size: 18 px;
+}
 .v34_223 {
   width: 816px;
   height: 57px;
@@ -910,6 +915,10 @@ body {
   opacity: 1;
   text-align: left;
 }
+.v34_224:hover {
+  color: rgb(20, 14, 203);
+  font-size: 18 px;
+}
 .v34_225 {
   width: 30px;
   color: rgba(17, 17, 17, 1);
@@ -921,6 +930,10 @@ body {
   font-size: 15px;
   opacity: 1;
   text-align: left;
+}
+.v34_225:hover {
+  color: rgb(20, 14, 203);
+  font-size: 18 px;
 }
 .v34_226 {
   width: 75px;
@@ -934,6 +947,10 @@ body {
   opacity: 1;
   text-align: left;
 }
+.v34_226:hover {
+  color: rgb(20, 14, 203);
+  font-size: 18 px;
+}
 .v34_227 {
   width: 50px;
   color: rgba(17, 17, 17, 1);
@@ -946,6 +963,10 @@ body {
   opacity: 1;
   text-align: left;
 }
+.v34_227:hover {
+  color: rgb(20, 14, 203);
+  font-size: 18 px;
+}
 .v34_228 {
   width: 45px;
   color: rgba(17, 17, 17, 1);
@@ -957,6 +978,10 @@ body {
   font-size: 15px;
   opacity: 1;
   text-align: left;
+}
+.v34_228:hover {
+  color: rgb(20, 14, 203);
+  font-size: 18 px;
 }
 .v34_230 {
   width: 138px;

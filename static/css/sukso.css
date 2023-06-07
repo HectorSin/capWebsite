@@ -15,9 +15,9 @@ body {
   overflow: hidden;
 }
 .v211_286 {
-  width: 100%;
-  height: 384px;
-  background: url("../images/v211_286.png");
+  width: 1600px;
+  height: 500px;
+  background: url("../images/sukso_hotel.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -530,7 +530,7 @@ body {
 .v210_284 {
   width: 100%;
   height: 454px;
-  background: url("../images/v210_214.png");
+  background: url("../images/sukso_ba.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
