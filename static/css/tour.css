@@ -10,9 +10,10 @@ body {
 }
 
 .v70_1930 {
-  width: 100%;
-  height: 1719px;
+  width: 1500px;
+  height: 1360px;
   background: rgba(255, 255, 255, 1);
+  background: url("../images/ttour.png");
   opacity: 1;
   position: absolute;
   top: 170px;
@@ -785,7 +786,7 @@ body {
 .v97_345 {
   width: 282px;
   height: 212px;
-  background: url("../images/v97_345.png");
+  background: url("../images/p1.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -974,7 +975,7 @@ body {
 .v97_349 {
   width: 282px;
   height: 212px;
-  background: url("../images/v97_349.png");
+  background: url("../images/p3.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1075,7 +1076,7 @@ body {
 .v97_351 {
   width: 282px;
   height: 212px;
-  background: url("../images/v97_351.png");
+  background: url("../images/p4.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1176,7 +1177,7 @@ body {
 .v97_352 {
   width: 280px;
   height: 210px;
-  background: url("../images/v97_352.png");
+  background: url("../images/p5.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1215,7 +1216,7 @@ body {
 .v97_353 {
   width: 282px;
   height: 210px;
-  background: url("../images/v97_353.png");
+  background: url("../images/p6.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1380,7 +1381,7 @@ body {
 .v97_354 {
   width: 282px;
   height: 210px;
-  background: url("../images/v97_354.png");
+  background: url("../images/p7.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1481,7 +1482,7 @@ body {
 .v97_355 {
   width: 282px;
   height: 210px;
-  background: url("../images/v97_355.png");
+  background: url("../images/p8.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1496,7 +1497,7 @@ body {
 .v97_348 {
   width: 280px;
   height: 212px;
-  background: url("../images/v97_348.png");
+  background: url("../images/p2.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

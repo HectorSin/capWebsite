@@ -7,6 +7,18 @@ body {
 .v178_470 {
   top: 1340px;
 }
+.rent {
+  width: 1440px;
+  height: 940px;
+  background: rgba(255, 255, 255, 1);
+  background: url("../images/rentcar.png");
+  opacity: 1;
+  position: absolute;
+  top: 170px;
+  left: 0px;
+  overflow: hidden;
+}
+
 .v103_562 {
   width: 100%;
   height: 1257px;

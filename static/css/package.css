@@ -10,9 +10,10 @@ body {
 }
 
 .v70_1930 {
-  width: 100%;
-  height: 1719px;
+  width: 1440px;
+  height: 1340px;
   background: rgba(255, 255, 255, 1);
+  background: url("../images/package.png");
   opacity: 1;
   position: absolute;
   top: 170px;
