@@ -2,7 +2,6 @@ import openai
 
 openai.api_key = "api"
 
-
 messages = []
 
 def chat(user):
