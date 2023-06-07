@@ -132,9 +132,88 @@
       </div>
     </div>
     <!--탑배너-->
+
     <span class="v200_543">여행 경로 추천</span>
     <div class="v200_545">
       <span class="v200_546">{{ result }}</span>
+    </div>
+    <!--지도API-->
+    <div id="map"></div>
+
+    <script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=abr47ay7xt"></script>
+    <script>
+      var mapOptions = {
+        center: new naver.maps.LatLng(37.5665, 126.978),
+        zoom: 10,
+      };
+
+      var map = new naver.maps.Map("map", mapOptions);
+
+      var markers = [];
+      var lines = [];
+
+      map.addListener("click", function (e) {
+        if (markers.length >= 5) {
+          return;
+        }
+
+        var latlng = e.coord;
+
+        var markerOptions = {
+          position: latlng,
+          map: map,
+        };
+
+        var marker = new naver.maps.Marker(markerOptions);
+
+        markers.push(marker);
+
+        if (markers.length > 1) {
+          var prevMarker = markers[markers.length - 2];
+          var line = new naver.maps.Polyline({
+            map: map,
+            path: [prevMarker.getPosition(), marker.getPosition()],
+            strokeColor: "#FF0000",
+            strokeWeight: 2,
+          });
+          lines.push(line);
+        }
+
+        // 생성한 맵핑 클릭 시 삭제
+        naver.maps.Event.addListener(marker, "click", function () {
+          var markerIndex = markers.findIndex(function (item) {
+            return item === marker;
+          });
+
+          if (markerIndex !== -1) {
+            marker.setMap(null);
+            markers.splice(markerIndex, 1);
+
+            // 해당 맵핑과 연결된 선 삭제
+            var lineIndices = [];
+            lines.forEach(function (line, index) {
+              if (
+                line.getPath()[0].equals(marker.getPosition()) ||
+                line.getPath()[1].equals(marker.getPosition())
+              ) {
+                lineIndices.push(index);
+                line.setMap(null);
+              }
+            });
+
+            lineIndices.forEach(function (index) {
+              lines.splice(index, 1);
+            });
+          }
+        });
+      });
+    </script>
+    <!--지도API-->
+
+    <div id="button-container">
+      <a class="custom-button" href="gps.html" target="_blank"
+        >지도 좌표 입력하러 가기</a
+      >
     </div>
 
     <!--하위배너-->

@@ -16,6 +16,10 @@ def read_txt():
 def page1():
     return render_template('index.html')
 
+@app.route('/login.html')
+def login():
+    return render_template('login.html')
+
 @app.route('/index.html')
 def page10():
     return render_template('index.html')
