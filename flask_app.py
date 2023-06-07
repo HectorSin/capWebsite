@@ -284,12 +284,19 @@ def page8():
 @app.route('/ways.html', methods=['POST'])
 def handle_form():
     user_input = request.form.get('userInput')
-    #c_result = chat(user_input)
+    c_result = chat(user_input)
     # 폼 데이터를 처리하는 로직을 작성합니다.
-
     # 결과를 ways.html에 전달하여 렌더링합니다.
-    c_result = user_input
+    #c_result = user_input
+    global gps
+    gps = c_result
     return render_template('ways.html', result=c_result)
+
+@app.route('/gps.html')
+def gps():
+    # 결과를 ways.html에 전달하여 렌더링합니다.
+    #c_result = user_input
+    return render_template('gps.html', result=gps)
 
 # 나머지 HTML 파일에 대해서도 동일한 방식으로 라우트를 추가합니다.
 
