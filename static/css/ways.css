@@ -5,6 +5,13 @@ body {
   font-size: 14px;
 }
 
+.gps {
+  position: absolute;
+  top: 730px;
+  left: 305px;
+  overflow: hidden;
+}
+
 .v200_543 {
   width: 209px;
   color: rgba(48, 201, 248, 1);
@@ -35,10 +42,11 @@ body {
   background: rgba(217, 217, 217, 1);
   opacity: 1;
   position: absolute;
-  top: 750px;
+  top: 870px;
   left: 305px;
   overflow: hidden;
 }
+/*
 .v200_546 {
   width: 934px;
   color: rgba(0, 0, 0, 1);
@@ -51,12 +59,26 @@ body {
   text-align: center;
   padding-bottom: 100px;
 }
+*/
+
+.v200_546 {
+  width: 934px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: normal;
+  font-size: 32px;
+  opacity: 1;
+  text-align: center;
+  padding-bottom: 100px;
+  transition: font-size 0.3s, color 0.3s;
+}
+
 .name {
   color: #fff;
 }
-.name {
-  color: #fff;
-}
+
 .v200_549 {
   width: 38px;
   height: 38px;

@@ -143,126 +143,126 @@ def handle_form111():
     c_result = chat(q1[0] + q2[0] + q3[0] + user_input)
     # c_result = q1[0] + q2[0] + q3[0] + user_input
     # 결과를 ways.html에 전달하여 렌더링합니다.
-    return render_template('ways.html', result=c_result)
+    return render_template('ways111.html', result=c_result)
 
 @app.route('/ways112.html', methods=['POST'])
 def handle_form112():
     user_input = request.form.get('userInput')
     c_result = chat(q1[0] + q2[0] + q3[1] + user_input)
     # 결과를 ways.html에 전달하여 렌더링합니다.
-    return render_template('ways.html', result=c_result)
+    return render_template('ways112.html', result=c_result)
 
 @app.route('/ways113.html', methods=['POST'])
 def handle_form113():
     user_input = request.form.get('userInput')
     c_result = chat(q1[0] + q2[0] + q3[2] + user_input)
     # 결과를 ways.html에 전달하여 렌더링합니다.
-    return render_template('ways.html', result=c_result)
+    return render_template('ways113.html', result=c_result)
 
 @app.route('/ways121.html', methods=['POST'])
 def handle_form121():
     user_input = request.form.get('userInput')
     c_result = chat(q1[0] + q2[1] + q3[0] + user_input)
     # 결과를 ways.html에 전달하여 렌더링합니다.
-    return render_template('ways.html', result=c_result)
+    return render_template('ways121.html', result=c_result)
 
 @app.route('/ways122.html', methods=['POST'])
 def handle_form122():
     user_input = request.form.get('userInput')
     c_result = chat(q1[0] + q2[1] + q3[1] + user_input)
     # 결과를 ways.html에 전달하여 렌더링합니다.
-    return render_template('ways.html', result=c_result)
+    return render_template('ways122.html', result=c_result)
 
 @app.route('/ways123.html', methods=['POST'])
 def handle_form123():
     user_input = request.form.get('userInput')
     c_result = chat(q1[0] + q2[1] + q3[2] + user_input)
     # 결과를 ways.html에 전달하여 렌더링합니다.
-    return render_template('ways.html', result=c_result)
+    return render_template('ways123.html', result=c_result)
 
 @app.route('/ways131.html', methods=['POST'])
 def handle_form131():
     user_input = request.form.get('userInput')
     c_result = chat(q1[0] + q2[2] + q3[0] + user_input)
     # 결과를 ways.html에 전달하여 렌더링합니다.
-    return render_template('ways.html', result=c_result)
+    return render_template('ways131.html', result=c_result)
 
 @app.route('/ways132.html', methods=['POST'])
 def handle_form132():
     user_input = request.form.get('userInput')
     c_result = chat(q1[0] + q2[2] + q3[1] + user_input)
     # 결과를 ways.html에 전달하여 렌더링합니다.
-    return render_template('ways.html', result=c_result)
+    return render_template('ways132.html', result=c_result)
 
 @app.route('/ways133.html', methods=['POST'])
 def handle_form133():
     user_input = request.form.get('userInput')
     c_result = chat(q1[0] + q2[2] + q3[2] + user_input)
     # 결과를 ways.html에 전달하여 렌더링합니다.
-    return render_template('ways.html', result=c_result)
+    return render_template('ways133.html', result=c_result)
 
 @app.route('/ways211.html', methods=['POST'])
 def handle_form211():
     user_input = request.form.get('userInput')
     c_result = chat(q1[1] + q2[0] + q3[0] + user_input)
     # 결과를 ways.html에 전달하여 렌더링합니다.
-    return render_template('ways.html', result=c_result)
+    return render_template('ways211.html', result=c_result)
 
 @app.route('/ways212.html', methods=['POST'])
 def handle_form212():
     user_input = request.form.get('userInput')
     c_result = chat(q1[1] + q2[0] + q3[1] + user_input)
     # 결과를 ways.html에 전달하여 렌더링합니다.
-    return render_template('ways.html', result=c_result)
+    return render_template('ways212.html', result=c_result)
 
 @app.route('/ways213.html', methods=['POST'])
 def handle_form213():
     user_input = request.form.get('userInput')
     c_result = chat(q1[1] + q2[0] + q3[2] + user_input)
     # 결과를 ways.html에 전달하여 렌더링합니다.
-    return render_template('ways.html', result=c_result)
+    return render_template('ways213.html', result=c_result)
 
 @app.route('/ways221.html', methods=['POST'])
 def handle_form221():
     user_input = request.form.get('userInput')
     c_result = chat(q1[1] + q2[1] + q3[0] + user_input)
     # 결과를 ways.html에 전달하여 렌더링합니다.
-    return render_template('ways.html', result=c_result)
+    return render_template('ways221.html', result=c_result)
 
 @app.route('/ways222.html', methods=['POST'])
 def handle_form222():
     user_input = request.form.get('userInput')
     c_result = chat(q1[1] + q2[1] + q3[1] + user_input)
     # 결과를 ways.html에 전달하여 렌더링합니다.
-    return render_template('ways.html', result=c_result)
+    return render_template('ways222.html', result=c_result)
 
 @app.route('/ways223.html', methods=['POST'])
 def handle_form223():
     user_input = request.form.get('userInput')
     c_result = chat(q1[1] + q2[1] + q3[2] + user_input)
     # 결과를 ways.html에 전달하여 렌더링합니다.
-    return render_template('ways.html', result=c_result)
+    return render_template('ways223.html', result=c_result)
 
 @app.route('/ways231.html', methods=['POST'])
 def handle_form231():
     user_input = request.form.get('userInput')
     c_result = chat(q1[1] + q2[2] + q3[0] + user_input)
     # 결과를 ways.html에 전달하여 렌더링합니다.
-    return render_template('ways.html', result=c_result)
+    return render_template('ways231.html', result=c_result)
 
 @app.route('/ways232.html', methods=['POST'])
 def handle_form232():
     user_input = request.form.get('userInput')
     c_result = chat(q1[1] + q2[2] + q3[1] + user_input)
     # 결과를 ways.html에 전달하여 렌더링합니다.
-    return render_template('ways.html', result=c_result)
+    return render_template('ways232.html', result=c_result)
 
 @app.route('/ways233.html', methods=['POST'])
 def handle_form233():
     user_input = request.form.get('userInput')
     c_result = chat(q1[1] + q2[2] + q3[2] + user_input)
     # 결과를 ways.html에 전달하여 렌더링합니다.
-    return render_template('ways.html', result=c_result)
+    return render_template('ways233.html', result=c_result)
 
 @app.route('/package.html')
 def page5():
