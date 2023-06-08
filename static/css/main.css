@@ -34,6 +34,54 @@
 .test:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
+.click_rent1 {
+  width: 342px;
+  height: 239px;
+  position: absolute;
+  top: 602px;
+  left: 192px;
+  z-index: 9999;
+}
+.click_rent2 {
+  width: 342px;
+  height: 239px;
+  position: absolute;
+  top: 602px;
+  left: 551px;
+  z-index: 9999;
+}
+.click_rent3 {
+  width: 342px;
+  height: 239px;
+  position: absolute;
+  top: 602px;
+  left: 910px;
+  z-index: 9999;
+}
+.click_rent4 {
+  width: 342px;
+  height: 239px;
+  position: absolute;
+  top: 858px;
+  left: 192px;
+  z-index: 9999;
+}
+.click_rent5 {
+  width: 342px;
+  height: 239px;
+  position: absolute;
+  top: 858px;
+  left: 551px;
+  z-index: 9999;
+}
+.click_rent6 {
+  width: 342px;
+  height: 239px;
+  position: absolute;
+  top: 858px;
+  left: 910px;
+  z-index: 9999;
+}
 .click_package1 {
   width: 282px;
   height: 390px;
