@@ -1,9 +1,38 @@
 * {
   box-sizing: border-box;
 }
+.div-class {
+  width: 200px;
+  height: 200px;
+  background-color: #f2b5d4;
+  transition: transform 0.2s;
+}
 
+.div-class:hover {
+  animation: shake 0.4s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(-2px) rotate(0deg);
+  }
+  50% {
+    transform: translateX(2px) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-2px) rotate(0deg);
+  }
+}
+.span-class {
+  font-size: 24px;
+  transition: opacity 0.5s ease;
+}
 .test {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s;
+}
+.test:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .click_package1 {
   width: 282px;
@@ -98,7 +127,7 @@
 }
 
 .click_sukso4 {
-  width: 282px;
+  width: 260px;
   height: 350px;
   position: absolute;
   top: 740px;
@@ -213,7 +242,7 @@
   width: 500px;
   height: 400px;
   top: 150px;
-  left: 250px;
+  left: 475px;
 }
 
 body {
@@ -1092,10 +1121,11 @@ body {
   font-size: 15px;
   opacity: 1;
   text-align: left;
+  transition: transform 0.3s;
 }
 .v34_224:hover {
   color: rgb(20, 14, 203);
-  font-size: 18 px;
+  transform: scale(1.05);
 }
 .v34_225 {
   width: 30px;
@@ -1108,10 +1138,11 @@ body {
   font-size: 15px;
   opacity: 1;
   text-align: left;
+  transition: transform 0.3s;
 }
 .v34_225:hover {
   color: rgb(20, 14, 203);
-  font-size: 18 px;
+  transform: scale(1.05);
 }
 .v34_226 {
   width: 75px;
@@ -1124,10 +1155,11 @@ body {
   font-size: 15px;
   opacity: 1;
   text-align: left;
+  transition: transform 0.3s;
 }
 .v34_226:hover {
   color: rgb(20, 14, 203);
-  font-size: 18 px;
+  transform: scale(1.05);
 }
 .v34_227 {
   width: 50px;
@@ -1140,10 +1172,11 @@ body {
   font-size: 15px;
   opacity: 1;
   text-align: left;
+  transition: transform 0.3s;
 }
 .v34_227:hover {
   color: rgb(20, 14, 203);
-  font-size: 18 px;
+  transform: scale(1.05);
 }
 .v34_228 {
   width: 45px;
@@ -1156,10 +1189,11 @@ body {
   font-size: 15px;
   opacity: 1;
   text-align: left;
+  transition: transform 0.3s;
 }
 .v34_228:hover {
   color: rgb(20, 14, 203);
-  font-size: 18 px;
+  transform: scale(1.05);
 }
 .v34_230 {
   width: 138px;
@@ -1368,7 +1402,7 @@ body {
   width: 61px;
   color: rgba(17, 17, 17, 1);
   position: absolute;
-  top: 12px;
+  top: 10px;
   left: 105px;
   font-family: Noto Sans KR;
   font-weight: DemiLight;
@@ -1395,7 +1429,7 @@ body {
   width: 31px;
   color: rgba(255, 255, 255, 1);
   position: absolute;
-  top: 13px;
+  top: 11px;
   left: 51px;
   font-family: Noto Sans KR;
   font-weight: Medium;

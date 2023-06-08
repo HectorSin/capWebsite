@@ -1,15 +1,17 @@
 .v200_546 {
   width: 934px;
-  color: #333333;
-  background-color: #ffffff;
+  color: #555555;
+  background-color: #f2f2f2;
   position: absolute;
   top: 800px;
   left: 255px;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 36px;
   opacity: 1;
   text-align: center;
-  padding-bottom: 100px;
-  line-height: 1.5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
 }

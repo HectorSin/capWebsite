@@ -78,7 +78,7 @@
       <div class="v178_461">
         <div class="v178_462">
           <div class="v178_1421">
-            <span class="v32_1337">제주도</span>
+            <span id="text-span" class="v32_1337 span-class">제주도</span>
             <div class="v34_60"></div>
             <span class="v34_61">HOT</span>
           </div>
@@ -143,7 +143,7 @@
               onclick="javascriot:location.href='https://m.blog.naver.com/mnoeuvring30177/223092235409'"
               style="cursor: hand"
               onfocus="blur();"
-              class="v34_69"
+              class="v34_69 div-class"
             ></div>
           </div>
           <div class="v178_468">
@@ -152,7 +152,7 @@
               onclick="javascriot:location.href='https://m.blog.naver.com/kkongi3028/222972420726'"
               style="cursor: hand"
               onfocus="blur();"
-              class="v34_68"
+              class="v34_68 div-class"
             ></div>
           </div>
           <div class="v178_467">
@@ -161,17 +161,17 @@
               onclick="javascriot:location.href='https://m.blog.naver.com/zaerac/223105271984'"
               style="cursor: hand"
               onfocus="blur();"
-              class="v34_67"
+              class="v34_67 div-class"
             ></div>
           </div>
-          <div
-            onclick="javascriot:location.href='https://m.blog.naver.com/ejejucom/223031826345'"
-            style="cursor: hand"
-            onfocus="blur();"
-            class="v178_466"
-          >
+          <div class="v178_466">
             <div class="v34_8"><span class="v34_9">제주에서</span></div>
-            <div class="v34_63"></div>
+            <div
+              onclick="javascriot:location.href='https://m.blog.naver.com/ejejucom/223031826345'"
+              style="cursor: hand"
+              onfocus="blur();"
+              class="v34_63 div-class"
+            ></div>
           </div>
         </div>
         <span class="v34_3">여행지 매거진</span>
@@ -251,5 +251,21 @@
     --></div>
 
     <!--하위배너-->
+    <script>
+      var textSpan = document.getElementById("text-span");
+      var texts = ["여수", "부산", "강릉", "대구"];
+      var index = 0;
+
+      function changeText() {
+        textSpan.style.opacity = 0;
+        setTimeout(function () {
+          textSpan.textContent = texts[index];
+          textSpan.style.opacity = 1;
+          index = (index + 1) % texts.length;
+        }, 500);
+      }
+
+      setInterval(changeText, 4000);
+    </script>
   </body>
 </html>
