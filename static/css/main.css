@@ -2,6 +2,174 @@
   box-sizing: border-box;
 }
 
+.test {
+  background-color: black;
+}
+.click_package1 {
+  width: 282px;
+  height: 390px;
+  position: absolute;
+  top: 577px;
+  left: 140px;
+  z-index: 9999;
+}
+.click_package2 {
+  width: 282px;
+  height: 390px;
+  position: absolute;
+  top: 577px;
+  left: 446px;
+  z-index: 9999;
+}
+.click_package3 {
+  width: 282px;
+  height: 390px;
+  position: absolute;
+  top: 577px;
+  left: 753px;
+  z-index: 9999;
+}
+.click_package4 {
+  width: 282px;
+  height: 390px;
+  position: absolute;
+  top: 577px;
+  left: 1060px;
+  z-index: 9999;
+}
+.click_package5 {
+  width: 282px;
+  height: 390px;
+  position: absolute;
+  top: 1044px;
+  left: 140px;
+  z-index: 9999;
+}
+.click_package6 {
+  width: 282px;
+  height: 390px;
+  position: absolute;
+  top: 1044px;
+  left: 446px;
+  z-index: 9999;
+}
+.click_package7 {
+  width: 282px;
+  height: 390px;
+  position: absolute;
+  top: 1044px;
+  left: 753px;
+  z-index: 9999;
+}
+.click_package8 {
+  width: 282px;
+  height: 390px;
+  position: absolute;
+  top: 1044px;
+  left: 1060px;
+  z-index: 9999;
+}
+
+.click_sukso1 {
+  width: 282px;
+  height: 350px;
+  position: absolute;
+  top: 740px;
+  left: 124px;
+  z-index: 9999;
+}
+
+.click_sukso2 {
+  width: 282px;
+  height: 350px;
+  position: absolute;
+  top: 740px;
+  left: 430px;
+  z-index: 9999;
+}
+
+.click_sukso3 {
+  width: 282px;
+  height: 350px;
+  position: absolute;
+  top: 740px;
+  left: 736px;
+  z-index: 9999;
+}
+
+.click_sukso4 {
+  width: 282px;
+  height: 350px;
+  position: absolute;
+  top: 740px;
+  left: 1040px;
+  z-index: 9999;
+}
+
+.click_tour1 {
+  width: 282px;
+  height: 392px;
+  position: absolute;
+  top: 550px;
+  left: 120px;
+  z-index: 9999;
+}
+.click_tour2 {
+  width: 282px;
+  height: 392px;
+  position: absolute;
+  top: 550px;
+  left: 425px;
+  z-index: 9999;
+}
+.click_tour3 {
+  width: 282px;
+  height: 392px;
+  position: absolute;
+  top: 550px;
+  left: 732px;
+  z-index: 9999;
+}
+.click_tour4 {
+  width: 282px;
+  height: 392px;
+  position: absolute;
+  top: 550px;
+  left: 1040px;
+  z-index: 9999;
+}
+.click_tour5 {
+  width: 282px;
+  height: 392px;
+  position: absolute;
+  top: 1076px;
+  left: 120px;
+  z-index: 9999;
+}
+.click_tour6 {
+  width: 282px;
+  height: 392px;
+  position: absolute;
+  top: 1076px;
+  left: 425px;
+  z-index: 9999;
+}
+.click_tour7 {
+  width: 282px;
+  height: 392px;
+  position: absolute;
+  top: 1076px;
+  left: 732px;
+  z-index: 9999;
+}
+.click_tour8 {
+  width: 282px;
+  height: 392px;
+  position: absolute;
+  top: 1076px;
+  left: 1040px;
+  z-index: 9999;
+}
 #button-container {
   text-align: center;
   margin-top: 20px;
