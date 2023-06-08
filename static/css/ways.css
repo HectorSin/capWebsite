@@ -15,7 +15,19 @@ body {
   left: 305px;
   overflow: hidden;
 }
-
+.v178_470 {
+  width: 100%;
+  height: 108px;
+  background: url("../images/Component1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1600px;
+  left: 0px;
+  overflow: hidden;
+}
 .v200_543 {
   width: 209px;
   color: rgba(48, 201, 248, 1);
@@ -42,7 +54,7 @@ body {
 }
 .v200_545 {
   width: 934px;
-  height: 540px;
+  height: 640px;
   background: linear-gradient(135deg, #e8f7ff, #d4e6f1);
   opacity: 1;
   position: absolute;

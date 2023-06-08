@@ -17,11 +17,11 @@ def chat(user, form=None):
     messages.append({"role": "assistant", "content": f"{assistant_content}"})
 
     assistant_content_t = assistant_content.replace('.', '.\n')
-    if form is True:
+    if form is None:
         with open('sp500.txt', 'a', encoding='utf-8') as file:
-            file.write("* "+ form + " " + assistant_content_t + '\n\n' + "**********************************************" + '\n\n')
+            file.write("* " + assistant_content_t + '\n\n' + "**********************************************" + '\n\n')    
     else:
         with open('sp500.txt', 'a', encoding='utf-8') as file:
-            file.write("* " + assistant_content_t + '\n\n' + "**********************************************" + '\n\n')
+            file.write("* "+ form + " " + assistant_content_t + '\n\n' + "**********************************************" + '\n\n')
 
     return assistant_content
