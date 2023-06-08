@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = "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"
+openai.api_key = "api"
 
 messages = []
 
