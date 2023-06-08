@@ -7,6 +7,10 @@ q1 = ["혼자 여행 다니기 괜찮은 장소로 ", "가족,친구,연인과 �
 q2 = ["괜찮은 호텔에 계속 머무는 여행을 좋아해 ", "문화체험을 많이 하는 여행을 좋아해 ", "호캉스, 문화체험 말고 다른 종류의 활동을 좋아해 "]
 q3 = ["돈 많이 써도 괜찮아, ", "돈 적당히 쓰고 싶어, ", "돈 많이 안쓰고 싶어, "]
 
+f1 = ["[혼자 ", "[함께 "]
+f2 = ["호캉스 좋아하는 ", "문화체험 좋아하는 ", "활동들 좋아하는 "]
+f3 = ["풍부한 여행]", "적당한 여행]", "저렴한 여행]"]
+
 def read_txt():
     with open('sp500.txt', 'r', encoding='utf-8') as file:
         txt_b = file.read()
@@ -144,7 +148,7 @@ def mypage():
 @app.route('/ways111.html', methods=['POST'])
 def handle_form111():
     user_input = request.form.get('userInput')
-    c_result = chat(q1[0] + q2[0] + q3[0] + user_input)
+    c_result = chat(q1[0] + q2[0] + q3[0] + user_input, f1[0]+f2[0]+f3[0])
     global gps
     gps = c_result
     # c_result = q1[0] + q2[0] + q3[0] + user_input
@@ -154,7 +158,7 @@ def handle_form111():
 @app.route('/ways112.html', methods=['POST'])
 def handle_form112():
     user_input = request.form.get('userInput')
-    c_result = chat(q1[0] + q2[0] + q3[1] + user_input)
+    c_result = chat(q1[0] + q2[0] + q3[1] + user_input, f1[0]+f2[0]+f3[1])
     global gps
     gps = c_result
     # 결과를 ways.html에 전달하여 렌더링합니다.
@@ -163,7 +167,7 @@ def handle_form112():
 @app.route('/ways113.html', methods=['POST'])
 def handle_form113():
     user_input = request.form.get('userInput')
-    c_result = chat(q1[0] + q2[0] + q3[2] + user_input)
+    c_result = chat(q1[0] + q2[0] + q3[2] + user_input, f1[0]+f2[0]+f3[2])
     global gps
     gps = c_result
     # 결과를 ways.html에 전달하여 렌더링합니다.
@@ -172,7 +176,7 @@ def handle_form113():
 @app.route('/ways121.html', methods=['POST'])
 def handle_form121():
     user_input = request.form.get('userInput')
-    c_result = chat(q1[0] + q2[1] + q3[0] + user_input)
+    c_result = chat(q1[0] + q2[1] + q3[0] + user_input, f1[0]+f2[1]+f3[0])
     global gps
     gps = c_result
     # 결과를 ways.html에 전달하여 렌더링합니다.
@@ -181,7 +185,7 @@ def handle_form121():
 @app.route('/ways122.html', methods=['POST'])
 def handle_form122():
     user_input = request.form.get('userInput')
-    c_result = chat(q1[0] + q2[1] + q3[1] + user_input)
+    c_result = chat(q1[0] + q2[1] + q3[1] + user_input, f1[0]+f2[1]+f3[1])
     global gps
     gps = c_result
     # 결과를 ways.html에 전달하여 렌더링합니다.
@@ -190,7 +194,7 @@ def handle_form122():
 @app.route('/ways123.html', methods=['POST'])
 def handle_form123():
     user_input = request.form.get('userInput')
-    c_result = chat(q1[0] + q2[1] + q3[2] + user_input)
+    c_result = chat(q1[0] + q2[1] + q3[2] + user_input, f1[0]+f2[1]+f3[2])
     global gps
     gps = c_result
     # 결과를 ways.html에 전달하여 렌더링합니다.
@@ -199,7 +203,7 @@ def handle_form123():
 @app.route('/ways131.html', methods=['POST'])
 def handle_form131():
     user_input = request.form.get('userInput')
-    c_result = chat(q1[0] + q2[2] + q3[0] + user_input)
+    c_result = chat(q1[0] + q2[2] + q3[0] + user_input, f1[0]+f2[2]+f3[0])
     global gps
     gps = c_result
     # 결과를 ways.html에 전달하여 렌더링합니다.
@@ -208,7 +212,7 @@ def handle_form131():
 @app.route('/ways132.html', methods=['POST'])
 def handle_form132():
     user_input = request.form.get('userInput')
-    c_result = chat(q1[0] + q2[2] + q3[1] + user_input)
+    c_result = chat(q1[0] + q2[2] + q3[1] + user_input, f1[0]+f2[2]+f3[1])
     global gps
     gps = c_result
     # 결과를 ways.html에 전달하여 렌더링합니다.
@@ -217,7 +221,7 @@ def handle_form132():
 @app.route('/ways133.html', methods=['POST'])
 def handle_form133():
     user_input = request.form.get('userInput')
-    c_result = chat(q1[0] + q2[2] + q3[2] + user_input)
+    c_result = chat(q1[0] + q2[2] + q3[2] + user_input, f1[0]+f2[2]+f3[2])
     global gps
     gps = c_result
     # 결과를 ways.html에 전달하여 렌더링합니다.
@@ -226,7 +230,7 @@ def handle_form133():
 @app.route('/ways211.html', methods=['POST'])
 def handle_form211():
     user_input = request.form.get('userInput')
-    c_result = chat(q1[1] + q2[0] + q3[0] + user_input)
+    c_result = chat(q1[1] + q2[0] + q3[0] + user_input, f1[1]+f2[0]+f3[0])
     global gps
     gps = c_result
     # 결과를 ways.html에 전달하여 렌더링합니다.
@@ -235,7 +239,7 @@ def handle_form211():
 @app.route('/ways212.html', methods=['POST'])
 def handle_form212():
     user_input = request.form.get('userInput')
-    c_result = chat(q1[1] + q2[0] + q3[1] + user_input)
+    c_result = chat(q1[1] + q2[0] + q3[1] + user_input, f1[1]+f2[0]+f3[1])
     global gps
     gps = c_result
     # 결과를 ways.html에 전달하여 렌더링합니다.
@@ -244,7 +248,7 @@ def handle_form212():
 @app.route('/ways213.html', methods=['POST'])
 def handle_form213():
     user_input = request.form.get('userInput')
-    c_result = chat(q1[1] + q2[0] + q3[2] + user_input)
+    c_result = chat(q1[1] + q2[0] + q3[2] + user_input, f1[1]+f2[0]+f3[2])
     global gps
     gps = c_result
     # 결과를 ways.html에 전달하여 렌더링합니다.
@@ -253,7 +257,7 @@ def handle_form213():
 @app.route('/ways221.html', methods=['POST'])
 def handle_form221():
     user_input = request.form.get('userInput')
-    c_result = chat(q1[1] + q2[1] + q3[0] + user_input)
+    c_result = chat(q1[1] + q2[1] + q3[0] + user_input, f1[1]+f2[1]+f3[0])
     global gps
     gps = c_result
     # 결과를 ways.html에 전달하여 렌더링합니다.
@@ -262,7 +266,7 @@ def handle_form221():
 @app.route('/ways222.html', methods=['POST'])
 def handle_form222():
     user_input = request.form.get('userInput')
-    c_result = chat(q1[1] + q2[1] + q3[1] + user_input)
+    c_result = chat(q1[1] + q2[1] + q3[1] + user_input, f1[1]+f2[1]+f3[1])
     global gps
     gps = c_result
     # 결과를 ways.html에 전달하여 렌더링합니다.
@@ -271,7 +275,7 @@ def handle_form222():
 @app.route('/ways223.html', methods=['POST'])
 def handle_form223():
     user_input = request.form.get('userInput')
-    c_result = chat(q1[1] + q2[1] + q3[2] + user_input)
+    c_result = chat(q1[1] + q2[1] + q3[2] + user_input, f1[1]+f2[1]+f3[2])
     global gps
     gps = c_result
     # 결과를 ways.html에 전달하여 렌더링합니다.
@@ -280,7 +284,7 @@ def handle_form223():
 @app.route('/ways231.html', methods=['POST'])
 def handle_form231():
     user_input = request.form.get('userInput')
-    c_result = chat(q1[1] + q2[2] + q3[0] + user_input)
+    c_result = chat(q1[1] + q2[2] + q3[0] + user_input, f1[1]+f2[2]+f3[0])
     global gps
     gps = c_result
     # 결과를 ways.html에 전달하여 렌더링합니다.
@@ -289,7 +293,7 @@ def handle_form231():
 @app.route('/ways232.html', methods=['POST'])
 def handle_form232():
     user_input = request.form.get('userInput')
-    c_result = chat(q1[1] + q2[2] + q3[1] + user_input)
+    c_result = chat(q1[1] + q2[2] + q3[1] + user_input, f1[1]+f2[2]+f3[1])
     global gps
     gps = c_result
     # 결과를 ways.html에 전달하여 렌더링합니다.
@@ -298,7 +302,7 @@ def handle_form232():
 @app.route('/ways233.html', methods=['POST'])
 def handle_form233():
     user_input = request.form.get('userInput')
-    c_result = chat(q1[1] + q2[2] + q3[2] + user_input)
+    c_result = chat(q1[1] + q2[2] + q3[2] + user_input, f1[1]+f2[2]+f3[2])
     global gps
     gps = c_result
     # 결과를 ways.html에 전달하여 렌더링합니다.
